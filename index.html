@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="es-GT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResiControl Plus · La garita que trabaja sola, con inteligencia artificial</title>
+<meta name="description" content="ResiControl Plus es la plataforma para condominios y residenciales de Guatemala: garita autónoma con agente de IA, control de visitas con QR, recibos, lecturas de agua, reservas y avisos. Panel web y app oficial en App Store y Google Play.">
+<meta name="theme-color" content="#1E5550">
+<link rel="canonical" href="https://resicontrolplus.com/">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_GT">
+<meta property="og:site_name" content="ResiControl Plus">
+<meta property="og:title" content="ResiControl Plus · La garita que trabaja sola">
+<meta property="og:description" content="Un agente de IA recibe a la visita, registra sus datos, avisa al residente y abre la talanquera. Panel web y apps oficiales para condominios en Guatemala.">
+<meta property="og:url" content="https://resicontrolplus.com/">
+<meta property="og:image" content="https://resicontrolplus.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","name":"ResiControl Plus","url":"https://resicontrolplus.com/","logo":"https://resicontrolplus.com/img/logo.jpg","email":"resicontrolplus@gmail.com","areaServed":"GT",
+  "sameAs":["https://www.facebook.com/profile.php?id=61596398257343","https://www.instagram.com/resicontrolplus/","https://www.tiktok.com/@resicontrol","https://www.youtube.com/@ResiControlPlus","https://www.linkedin.com/company/resicontrol-plus/"]},
+ {"@type":"SoftwareApplication","name":"ResiControl Plus","applicationCategory":"BusinessApplication","operatingSystem":"iOS, Android, Web",
+  "description":"Garita autónoma con IA y administración para condominios y residenciales en Guatemala."}]}
+</script>
+<style>
+:root{
+  --d:#1E5550;--dd:#163F3B;--ddd:#0F2E2B;--m:#10B49C;--m2:#0E9C88;--o:#FFB020;--o2:#F29D00;
+  --l:#E3EFE9;--l2:#F3F8F5;--g:#B9D3CB;--ink:#16302D;--txt:#3D5753;--w:#fff;
+  --r:22px;--sh:0 18px 50px -22px rgba(15,46,43,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Plus Jakarta Sans',-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--txt);background:var(--w);
+  line-height:1.6;-webkit-font-smoothing:antialiased;font-size:17px}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{color:var(--ink);line-height:1.15;letter-spacing:-.02em;font-weight:800}
+h2{font-size:clamp(30px,4.2vw,46px)}
+h3{font-size:20px;letter-spacing:-.01em}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--m2)}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--m)}
+.lead{font-size:clamp(17px,1.6vw,19px);max-width:640px}
+section{padding:clamp(72px,9vw,120px) 0}
+.center{text-align:center}.center .lead{margin-inline:auto}
+.head{margin-bottom:clamp(36px,5vw,56px)}
+.head h2{margin:14px 0 16px}
+
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;
+  font-weight:700;font-size:16px;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-o{background:var(--o);color:var(--ink);box-shadow:0 10px 28px -10px rgba(255,176,32,.8)}
+.btn-o:hover{background:#ffbc3d}
+.btn-g{border:1.5px solid rgba(255,255,255,.35);color:var(--w)}
+.btn-g:hover{background:rgba(255,255,255,.08)}
+.btn-d{background:var(--d);color:var(--w)}
+.btn svg{width:18px;height:18px}
+
+/* navegación */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.6) blur(14px);
+  -webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid rgba(30,85,80,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--ink);font-size:18px;letter-spacing:-.01em}
+.brand img{width:40px;height:40px;border-radius:11px}
+.brand b{color:var(--m2)}
+.links{display:flex;gap:30px;font-weight:600;font-size:15px;color:var(--txt)}
+.links a:hover{color:var(--d)}
+.nav .btn{height:44px;padding:0 20px;font-size:15px}
+.menu{display:none;background:none;border:0;width:44px;height:44px;border-radius:12px;color:var(--ink);cursor:pointer}
+.menu svg{width:26px;height:26px;margin:auto}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 600px at 80% -10%,#24706A 0%,transparent 60%),
+  linear-gradient(160deg,var(--d) 0%,var(--dd) 55%,var(--ddd) 100%);color:#D6E8E2;padding:clamp(56px,8vw,96px) 0 clamp(64px,8vw,100px)}
+.hero::after{content:"";position:absolute;inset:auto -10% -1px -10%;height:120px;
+  background:repeating-linear-gradient(-55deg,rgba(255,176,32,.0) 0 34px,rgba(255,176,32,.07) 34px 58px);mask:linear-gradient(transparent,#000)}
+.hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;position:relative;z-index:1}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border-radius:999px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);font-size:14px;font-weight:600;color:#E8F4F0}
+.pill i{width:24px;height:24px;border-radius:50%;background:var(--m);display:grid;place-items:center;font-style:normal;color:#fff;font-size:12px}
+.hero h1{color:var(--w);font-size:clamp(42px,6.4vw,76px);margin:22px 0 22px}
+.hero h1 span{color:var(--o)}
+.hero .lead{color:#CFE3DC}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 30px}
+.stores{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:14px;color:#A9C9BF}
+.store{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;background:rgba(0,0,0,.18);
+  border:1px solid rgba(255,255,255,.14);color:#fff;font-weight:700;font-size:14px;transition:background .2s}
+.store:hover{background:rgba(0,0,0,.32)}
+.store small{display:block;font-size:10.5px;font-weight:600;color:#A9C9BF;letter-spacing:.04em;text-transform:uppercase;line-height:1}
+.store span{line-height:1.2}
+.phone{justify-self:center;width:min(340px,80vw);border-radius:44px;padding:11px;background:#0B1F1D;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.65),inset 0 0 0 2px rgba(255,255,255,.08);position:relative}
+.phone video{width:100%;aspect-ratio:9/16;height:auto;object-fit:cover;border-radius:34px;background:#163F3B}
+.sound{position:absolute;bottom:26px;right:26px;z-index:3;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(255,255,255,.92);color:var(--d);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.sound svg{width:22px;height:22px}
+.float{position:absolute;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;box-shadow:var(--sh);
+  font-weight:700;font-size:14px;display:flex;align-items:center;gap:10px;z-index:3;white-space:nowrap}
+.float em{font-style:normal;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--l);color:var(--m2)}
+.float small{display:block;font-weight:600;color:#6B8580;font-size:12px}
+.f1{left:-58px;top:22%}.f2{right:-48px;bottom:24%}
+
+/* franja */
+.strip{background:var(--l2);border-bottom:1px solid #E2ECE8;padding:26px 0}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.strip div{display:flex;gap:12px;align-items:center;font-weight:700;color:var(--ink);font-size:15px}
+.strip svg{flex:none;width:28px;height:28px;color:var(--m2)}
+
+/* problema */
+.prob{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #E2ECE8;border-radius:var(--r);padding:28px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.card .ic{width:50px;height:50px;border-radius:14px;background:var(--l);color:var(--d);display:grid;place-items:center;margin-bottom:18px}
+.card .ic svg{width:26px;height:26px}
+.card h3{margin-bottom:8px}
+.card p{font-size:15.5px}
+.x .ic{background:#FFF1D6;color:#B86E00}
+
+/* garita IA */
+.ia{background:linear-gradient(180deg,var(--l2),#fff)}
+.ia-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ilus{background:var(--l);border-radius:32px;padding:18px;box-shadow:var(--sh)}
+.ilus img{width:100%;border-radius:22px}
+.steps{display:grid;gap:14px;margin-top:30px;counter-reset:s}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;background:#fff;border:1px solid #E2ECE8;border-radius:18px;padding:18px}
+.step b{counter-increment:s;width:52px;height:52px;border-radius:15px;background:var(--d);color:#fff;display:grid;place-items:center;font-size:20px}
+.step b::before{content:counter(s)}
+.step h3{font-size:18px;margin:3px 0 2px}
+.step p{font-size:15.5px}
+.note{margin-top:18px;font-size:14px;color:#6B8580}
+.quote{margin-top:26px;padding:20px 22px;border-left:4px solid var(--o);background:#FFF8EA;border-radius:0 16px 16px 0;color:var(--ink);font-weight:600}
+
+/* plataforma */
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mod{border-radius:var(--r);border:1px solid #E2ECE8;overflow:hidden;background:#fff;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.mod:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.mod .pic{background:var(--l);padding:14px 14px 0}
+.mod .pic img{border-radius:16px 16px 0 0;width:100%}
+.mod .tx{padding:22px 24px 26px}
+.mod h3{margin-bottom:6px}
+.mod p{font-size:15.5px}
+.minis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+.mini{display:flex;gap:14px;align-items:flex-start;padding:20px;border-radius:18px;background:var(--l2)}
+.mini svg{flex:none;width:26px;height:26px;color:var(--m2);margin-top:2px}
+.mini h3{font-size:16px;margin-bottom:2px}
+.mini p{font-size:14.5px}
+
+/* integral */
+.int{background:var(--d);color:#CFE3DC;position:relative;overflow:hidden}
+.int h2{color:#fff}.int .eyebrow{color:var(--m)}
+.int-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.int .ilus{background:rgba(255,255,255,.06);box-shadow:none;border:1px solid rgba(255,255,255,.1)}
+.checks{list-style:none;display:grid;gap:14px;margin:28px 0 32px}
+.checks li{display:flex;gap:12px;align-items:flex-start;color:#E3F0EC}
+.checks li::before{content:"";flex:none;width:24px;height:24px;margin-top:1px;border-radius:50%;
+  background:var(--m) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/16px no-repeat}
+.int .stores .store{background:rgba(255,255,255,.08)}
+
+/* para quién */
+.who{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.who .card{padding:30px 26px}
+.who .card .ic{background:var(--d);color:#fff}
+
+/* cómo empezar */
+.path{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}
+.path::before{content:"";position:absolute;top:34px;left:12%;right:12%;height:2px;background:repeating-linear-gradient(90deg,var(--g) 0 10px,transparent 10px 18px)}
+.p{text-align:center;position:relative}
+.p b{width:68px;height:68px;margin:0 auto 18px;border-radius:50%;background:#fff;border:2px solid var(--m);color:var(--d);
+  display:grid;place-items:center;font-size:24px;box-shadow:0 0 0 8px #fff}
+.p h3{margin-bottom:6px}
+.p p{font-size:15.5px;max-width:240px;margin:auto}
+
+/* FAQ */
+.faq{background:var(--l2)}
+.qs{max-width:820px;margin:auto;display:grid;gap:12px}
+details{background:#fff;border:1px solid #E2ECE8;border-radius:18px;padding:0 24px;transition:box-shadow .2s}
+details[open]{box-shadow:var(--sh)}
+summary{list-style:none;cursor:pointer;padding:22px 0;font-weight:700;color:var(--ink);font-size:17px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:28px;height:28px;border-radius:50%;background:var(--l) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231E5550' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/16px no-repeat;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;font-size:16px}
+
+/* CTA */
+.cta-box{background:linear-gradient(135deg,var(--d),var(--ddd));border-radius:36px;padding:clamp(40px,6vw,72px);color:#CFE3DC;
+  display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.cta-box::after{content:"";position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(16,180,156,.35),transparent 70%)}
+.cta-box h2{color:#fff;margin-bottom:14px}
+.contact{display:grid;gap:12px;position:relative;z-index:1}
+.contact a{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#fff;font-weight:600;transition:background .2s}
+.contact a:hover{background:rgba(255,255,255,.13)}
+.contact svg{width:22px;height:22px;flex:none;color:var(--o)}
+.contact small{display:block;color:#A9C9BF;font-weight:500;font-size:13px}
+
+/* pie */
+footer{padding:56px 0 40px;color:#6B8580;font-size:15px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;padding-bottom:36px;border-bottom:1px solid #E2ECE8}
+.foot h4{color:var(--ink);font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+.foot ul{list-style:none;display:grid;gap:8px}
+.foot a:hover{color:var(--d)}
+.social{display:flex;gap:10px;margin-top:18px}
+.social a{width:40px;height:40px;border-radius:12px;background:var(--l2);display:grid;place-items:center;color:var(--d);transition:background .2s,color .2s}
+.social a:hover{background:var(--d);color:#fff}
+.social svg{width:19px;height:19px}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:24px;font-size:14px}
+
+/* aparición */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* responsivo */
+@media (max-width:1020px){
+  .links{display:none}
+  .menu{display:block}
+  .links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #E2ECE8;padding:8px 20px 16px}
+  .links.open a{padding:14px 0;border-bottom:1px solid #F0F5F3}
+  .hero .wrap,.ia-grid,.int-grid,.cta-box{grid-template-columns:1fr}
+  .hero .wrap{gap:48px}
+  .f1{left:-12px}.f2{right:-12px}
+  .prob,.who,.minis{grid-template-columns:repeat(2,1fr)}
+  .mods{grid-template-columns:repeat(2,1fr)}
+  .path{grid-template-columns:repeat(2,1fr);row-gap:36px}.path::before{display:none}
+  .strip .wrap{grid-template-columns:repeat(2,1fr)}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .nav .btn{display:none}
+  .prob,.who,.mods,.minis,.path,.strip .wrap{grid-template-columns:1fr}
+  .hero .cta .btn{flex:1 1 100%}
+  .float{display:none}
+  .foot{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="ResiControl Plus, inicio"><img src="img/logo.jpg" alt="" width="40" height="40">ResiControl <b>Plus</b></a>
+    <nav class="links" id="links" aria-label="Principal">
+      <a href="#garita-ia">Garita con IA</a>
+      <a href="#plataforma">Plataforma</a>
+      <a href="#integral">Apps</a>
+      <a href="#empezar">Cómo empezar</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn-o" href="#contacto">Solicita una demo</a>
+    <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="inicio">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><i>IA</i>Garita autónoma para condominios en Guatemala</span>
+      <h1>La garita que <span>trabaja sola.</span></h1>
+      <p class="lead">Un agente de inteligencia artificial recibe a la visita, registra sus datos, avisa al residente y, cuando él autoriza, abre la talanquera. Sin filas, sin cuadernos y con cada ingreso registrado.</p>
+      <div class="cta">
+        <a class="btn btn-o" href="#contacto">Solicita una demo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-g" href="#garita-ia">Ver cómo funciona</a>
+      </div>
+      <div class="stores">
+        <a class="store" href="https://apps.apple.com/gt/app/resicontrol-plus/id6766940113" target="_blank" rel="noopener"><span><small>Disponible en</small>App Store</span></a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.coloniasanantonio.resicontrol" target="_blank" rel="noopener"><span><small>Disponible en</small>Google Play</span></a>
+        <span>+ panel web para la administración</span>
+      </div>
+    </div>
+    <div style="position:relative;justify-self:center">
+      <div class="phone">
+        <video id="vid" src="video/garita.mp4" poster="video/poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Animación: un agente de IA atiende a una visita en la garita, el vecino autoriza desde su celular y la talanquera se abre"></video>
+        <button class="sound" id="sound" aria-label="Activar sonido">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+        </button>
+      </div>
+      <div class="float f1"><em>✓</em><div>Visitante registrado<small>Nombre · placa · foto</small></div></div>
+      <div class="float f2"><em>🔔</em><div>El vecino autorizó<small>Desde la app o por llamada</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FRANJA -->
+<div class="strip">
+  <div class="wrap">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>Panel web + app móvil</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>Apps oficiales iOS y Android</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>Cada ingreso queda registrado</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Hecho en Guatemala, soporte local</div>
+  </div>
+</div>
+
+<!-- PROBLEMA -->
+<section>
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">El problema</span>
+      <h2>¿Cómo se registra hoy una visita en tu garita?</h2>
+      <p class="lead">En muchos condominios todavía depende de un cuaderno, de llamadas y de la memoria del turno. Y cuando algo pasa, nadie sabe con certeza quién entró.</p>
+    </div>
+    <div class="prob">
+      <div class="card x rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4z"/><path d="M8 8h6M8 12h6"/></svg></div><h3>Cuadernos ilegibles</h3><p>Datos incompletos, letra difícil y hojas que se pierden.</p></div>
+      <div class="card x rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Llamadas sin respuesta</h3><p>El guardia llama, el residente no contesta y la visita espera.</p></div>
+      <div class="card x rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="10" width="7" height="6" rx="2"/><rect x="15" y="10" width="7" height="6" rx="2"/><path d="M9 13h6"/></svg></div><h3>Filas en la entrada</h3><p>En horas pico y en diciembre, la garita se vuelve un cuello de botella.</p></div>
+      <div class="card x rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17.5v.01"/></svg></div><h3>Cero historial</h3><p>Sin registro confiable, una queja o un incidente no se puede aclarar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GARITA IA -->
+<section class="ia" id="garita-ia">
+  <div class="wrap ia-grid">
+    <div class="rv">
+      <span class="eyebrow">Garita autónoma con IA</span>
+      <h2 style="margin:14px 0 16px">Nadie tiene que intervenir. La IA toma los datos; el vecino decide.</h2>
+      <p class="lead">Nuestro agente de IA atiende la entrada las 24 horas con la misma amabilidad y el mismo cuidado, de la primera visita a la última.</p>
+      <div class="steps">
+        <div class="step"><b></b><div><h3>Recibe</h3><p>Saluda a la visita y le pregunta a qué casa se dirige.</p></div></div>
+        <div class="step"><b></b><div><h3>Registra</h3><p>Lee la identificación y guarda nombre, placa y foto.</p></div></div>
+        <div class="step"><b></b><div><h3>Notifica</h3><p>Avisa al residente en su app o con una llamada para que autorice o rechace.</p></div></div>
+        <div class="step"><b></b><div><h3>Abre</h3><p>Con la autorización, la talanquera se abre sola y el ingreso queda en el historial.</p></div></div>
+      </div>
+      <p class="note">La apertura automática de la talanquera depende de la instalación de cada garita.</p>
+    </div>
+    <div class="rv">
+      <div class="ilus"><img src="img/agente.svg" alt="Ilustración: kiosco con agente de IA en la garita, la talanquera abierta y un auto entrando" width="480" height="300"></div>
+      <p class="quote">El personal de seguridad deja de anotar, llamar y apretar botones, y queda libre para lo más importante: vigilar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLATAFORMA -->
+<section id="plataforma">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Una plataforma completa</span>
+      <h2>Todo tu condominio, en un solo lugar</h2>
+      <p class="lead">La garita, los residentes y la administración conectados en tiempo real. Cada módulo resuelve un problema real del día a día.</p>
+    </div>
+    <div class="mods">
+      <article class="mod rv"><div class="pic"><img src="img/qr.svg" alt="" width="480" height="300" loading="lazy"></div><div class="tx"><h3>Visitas programadas con QR</h3><p>El residente crea la visita, el invitado presenta su código y entra sin hacer fila. Ideal para posadas y reuniones.</p></div></article>
+      <article class="mod rv"><div class="pic"><img src="img/recibo.svg" alt="" width="480" height="300" loading="lazy"></div><div class="tx"><h3>Recibos y comprobantes</h3><p>Cada residente consulta sus recibos y envía su comprobante de pago desde la app. La administración lo ve al instante.</p></div></article>
+      <article class="mod rv"><div class="pic"><img src="img/contador.svg" alt="" width="480" height="300" loading="lazy"></div><div class="tx"><h3>Lectura de agua con IA</h3><p>Se escanea el QR del medidor, se toma la foto y la IA lee el contador. Un historial claro para cada casa y menos discusiones.</p></div></article>
+      <article class="mod rv"><div class="pic"><img src="img/calendario.svg" alt="" width="480" height="300" loading="lazy"></div><div class="tx"><h3>Reservas de áreas comunes</h3><p>Salón, rancho o piscina: calendario con disponibilidad, reserva y confirmación, sin llamadas.</p></div></article>
+      <article class="mod rv"><div class="pic"><img src="img/avisos.svg" alt="" width="480" height="300" loading="lazy"></div><div class="tx"><h3>Avisos y noticias</h3><p>Comunicados de la junta directiva que llegan a todos los residentes, en lugar de perderse en un chat.</p></div></article>
+      <article class="mod rv"><div class="pic"><img src="img/panel.svg" alt="" width="480" height="300" loading="lazy"></div><div class="tx"><h3>Panel web de administración</h3><p>Visitas, residentes, cobros y reportes desde la computadora, con el historial completo de la garita.</p></div></article>
+    </div>
+    <div class="minis">
+      <div class="mini rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v2M11 11v6M15 7v10M19 12v5"/></svg><div><h3>Encuestas</h3><p>Decisiones de la comunidad con votación en la app.</p></div></div>
+      <div class="mini rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg><div><h3>Documentos</h3><p>Reglamentos y actas siempre a mano.</p></div></div>
+      <div class="mini rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div><h3>Comentarios</h3><p>Sugerencias y reportes de los vecinos, ordenados.</p></div></div>
+      <div class="mini rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7 16 12l7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><div><h3>Tu equipo actual</h3><p>Se adapta a las cámaras de tu garita, según compatibilidad.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRAL -->
+<section class="int" id="integral">
+  <div class="wrap int-grid">
+    <div class="rv">
+      <span class="eyebrow">Un sistema integral</span>
+      <h2 style="margin:14px 0 16px">Apps oficiales, no instaladas por fuera</h2>
+      <p class="lead">ResiControl Plus está publicado en las tiendas oficiales de Apple y Google, con sus revisiones y actualizaciones. Tus residentes lo descargan con confianza, como cualquier app seria.</p>
+      <ul class="checks">
+        <li>Panel web para la administración y la junta directiva.</li>
+        <li>App oficial para residentes en App Store y Google Play.</li>
+        <li>Todo conectado en tiempo real: lo que pasa en la garita se ve en la app.</li>
+        <li>Datos protegidos, con acceso solo para quien corresponde.</li>
+      </ul>
+      <div class="stores">
+        <a class="store" href="https://apps.apple.com/gt/app/resicontrol-plus/id6766940113" target="_blank" rel="noopener"><span><small>Descárgala en</small>App Store</span></a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.coloniasanantonio.resicontrol" target="_blank" rel="noopener"><span><small>Disponible en</small>Google Play</span></a>
+      </div>
+    </div>
+    <div class="rv"><div class="ilus"><img src="img/tiendas.svg" alt="Ilustración: panel web en una computadora y la app ResiControl Plus en un celular" width="480" height="300" loading="lazy"></div></div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section>
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Para quién es</span>
+      <h2>Pensado para cada persona del condominio</h2>
+    </div>
+    <div class="who">
+      <div class="card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h3>Juntas directivas y administradores</h3><p>Control, historial y orden en cobros, visitas y comunicados.</p></div>
+      <div class="card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div><h3>Residentes</h3><p>Autorizan visitas, pagan, reservan y se enteran de todo desde el celular.</p></div>
+      <div class="card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/></svg></div><h3>Seguridad y garita</h3><p>Menos trabajo manual y más tiempo para vigilar lo que importa.</p></div>
+      <div class="card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></svg></div><h3>Constructoras y desarrolladoras</h3><p>Entrega tus proyectos con una garita moderna y un valor agregado real.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO EMPEZAR -->
+<section id="empezar" style="padding-top:0">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Cómo empezar</span>
+      <h2>Tu condominio en marcha, paso a paso</h2>
+      <p class="lead">Te acompañamos desde la primera llamada hasta que todo funciona solo.</p>
+    </div>
+    <div class="path">
+      <div class="p rv"><b>1</b><h3>Demo</h3><p>Te mostramos el sistema funcionando y entendemos tu garita.</p></div>
+      <div class="p rv"><b>2</b><h3>Configuración</h3><p>Cargamos casas, residentes y reglas de tu condominio.</p></div>
+      <div class="p rv"><b>3</b><h3>Capacitación</h3><p>Preparamos a la administración, a la garita y a los vecinos.</p></div>
+      <div class="p rv"><b>4</b><h3>En marcha</h3><p>Soporte local y mejoras continuas para tu comunidad.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="preguntas">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Lo que más nos preguntan</h2>
+    </div>
+    <div class="qs rv">
+      <details><summary>¿La garita con IA reemplaza al guardia?</summary><p>El agente de IA se encarga de recibir, registrar y avisar. Así el personal de seguridad deja el cuaderno y el teléfono, y se concentra en vigilar. Cada condominio decide cómo organizar su seguridad.</p></details>
+      <details><summary>¿La talanquera se abre sola?</summary><p>Sí, cuando el residente autoriza, siempre que la garita cuente con la instalación necesaria. En la demo revisamos el equipo de tu entrada y te decimos qué hace falta.</p></details>
+      <details><summary>¿Tengo que cambiar mis cámaras o mi equipo?</summary><p>No necesariamente. ResiControl Plus se adapta al equipo que ya tiene tu garita, según su compatibilidad.</p></details>
+      <details><summary>¿Funciona en iPhone y en Android?</summary><p>Sí. La app oficial está en App Store y en Google Play, y la administración trabaja desde el panel web en cualquier computadora.</p></details>
+      <details><summary>¿Qué pasa si el residente no responde?</summary><p>El sistema le avisa por la app y también puede llamarle. La visita no entra sin autorización, y todo queda registrado para la administración.</p></details>
+      <details><summary>¿Cuánto cuesta?</summary><p>Cada condominio es distinto: número de casas, garitas y equipo. Por eso preparamos una propuesta a la medida después de la demo.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="wrap">
+    <div class="cta-box rv">
+      <div style="position:relative;z-index:1">
+        <span class="eyebrow" style="color:var(--m)">Solicita tu demo</span>
+        <h2 style="margin-top:14px">Mira la garita que trabaja sola, funcionando.</h2>
+        <p class="lead">Escríbenos y agendamos una demostración para tu junta directiva o tu proyecto. Te respondemos personalmente.</p>
+      </div>
+      <div class="contact">
+        <a href="mailto:resicontrolplus@gmail.com?subject=Solicitud%20de%20demo%20ResiControl%20Plus&body=Hola%2C%20me%20interesa%20una%20demo%20de%20ResiControl%20Plus.%0A%0ANombre%20del%20condominio%3A%0ACantidad%20de%20casas%3A%0AUbicaci%C3%B3n%3A%0ATel%C3%A9fono%20de%20contacto%3A%0A">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          <span>resicontrolplus@gmail.com<small>Escríbenos para agendar tu demo</small></span></a>
+        <a href="https://www.facebook.com/profile.php?id=61596398257343" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.8.2-1.3 1.4-1.3H17V2.2C16.6 2.1 15.6 2 14.4 2 11.9 2 10.3 3.5 10.3 6.2V8H7.5v3.4h2.8V22H14V11.4h2.8l.4-3.4z"/></svg>
+          <span>Facebook<small>Escríbenos por mensaje</small></span></a>
+        <a href="https://www.instagram.com/resicontrolplus/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <span>Instagram<small>@resicontrolplus</small></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#inicio"><img src="img/logo.jpg" alt="" width="40" height="40">ResiControl <b>Plus</b></a>
+        <p style="margin-top:14px;max-width:320px">Garita autónoma con IA y administración para condominios y residenciales de Guatemala.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=61596398257343" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.8.2-1.3 1.4-1.3H17V2.2C16.6 2.1 15.6 2 14.4 2 11.9 2 10.3 3.5 10.3 6.2V8H7.5v3.4h2.8V22H14V11.4h2.8l.4-3.4z"/></svg></a>
+          <a href="https://www.instagram.com/resicontrolplus/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://www.tiktok.com/@resicontrol" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2-2.8V9a6.3 6.3 0 1 0 5.3 6.2V8.6a7.7 7.7 0 0 0 4.4 1.4V6.7a4.4 4.4 0 0 1-4.4-4.7z"/></svg></a>
+          <a href="https://www.youtube.com/@ResiControlPlus" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9L15.6 12z"/></svg></a>
+          <a href="https://www.linkedin.com/company/resicontrol-plus/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Producto</h4><ul><li><a href="#garita-ia">Garita con IA</a></li><li><a href="#plataforma">Plataforma</a></li><li><a href="#integral">Apps oficiales</a></li><li><a href="#preguntas">Preguntas</a></li></ul></div>
+      <div><h4>Apps</h4><ul><li><a href="https://apps.apple.com/gt/app/resicontrol-plus/id6766940113" target="_blank" rel="noopener">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.coloniasanantonio.resicontrol" target="_blank" rel="noopener">Google Play</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li><a href="mailto:resicontrolplus@gmail.com">resicontrolplus@gmail.com</a></li><li><a href="#contacto">Solicita una demo</a></li><li>Guatemala</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 ResiControl Plus. Hecho con cariño en Guatemala.</span><span>La apertura automática de talanquera depende de la instalación.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var m=document.getElementById('menu'),l=document.getElementById('links');
+  m.addEventListener('click',function(){var o=l.classList.toggle('open');m.setAttribute('aria-expanded',o)});
+  l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');m.setAttribute('aria-expanded','false')}});
+  var v=document.getElementById('vid'),s=document.getElementById('sound');
+  var on='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>';
+  var off=s.innerHTML;
+  s.addEventListener('click',function(){
+    if(v.muted){v.muted=false;v.currentTime=0;v.play();s.innerHTML=on;s.setAttribute('aria-label','Silenciar')}
+    else{v.muted=true;s.innerHTML=off;s.setAttribute('aria-label','Activar sonido')}
+  });
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('on')});
+})();
+</script>
+</body>
+</html>

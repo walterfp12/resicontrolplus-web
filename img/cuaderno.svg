@@ -1,0 +1,12 @@
+<svg viewBox="0 0 480 300"  xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="480" height="300" rx="28" fill="#E3EFE9"/>
+<g transform="rotate(-6 200 150)">
+<rect x="90" y="40" width="220" height="230" rx="10" fill="#FFFFFF" stroke="#B9D3CB" stroke-width="3"/>
+<rect x="90" y="40" width="26" height="230" rx="8" fill="#1E5550"/>
+<path d="M140 90 q20 -8 40 0 t40 0 t40 0" stroke="#B9D3CB" stroke-width="5" fill="none"/>
+<path d="M140 125 q15 6 30 0 t30 0 t30 4" stroke="#B9D3CB" stroke-width="5" fill="none"/>
+<path d="M140 160 q20 -6 35 2 t45 -4" stroke="#B9D3CB" stroke-width="5" fill="none"/>
+<path d="M140 195 q25 8 50 -2 t50 2" stroke="#B9D3CB" stroke-width="5" fill="none"/>
+<path d="M140 230 q15 -4 30 0" stroke="#B9D3CB" stroke-width="5" fill="none"/></g>
+<circle cx="370" cy="120" r="58" fill="#FFB020"/>
+<text x="370" y="148" font-size="84" font-weight="800" fill="#FFFFFF" text-anchor="middle">?</text></svg>

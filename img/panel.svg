@@ -1,0 +1,6 @@
+<svg viewBox="0 0 480 300"  xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Helvetica Neue, Arial, sans-serif">
+<rect x="0" y="0" width="480" height="300" rx="28" fill="#E3EFE9"/>
+<rect x="80" y="30" width="320" height="200" rx="14" fill="#1E5550"/>
+<rect x="94" y="44" width="292" height="172" rx="8" fill="#F7FAF8"/>
+<rect x="104" y="56" width="30" height="148" rx="4" fill="#E3EFE9"/><rect x="150" y="140" width="26" height="50" rx="4" fill="#10B49C"/><rect x="190" y="110" width="26" height="80" rx="4" fill="#10B49C"/><rect x="230" y="126" width="26" height="64" rx="4" fill="#10B49C"/><rect x="270" y="80" width="26" height="110" rx="4" fill="#FFB020"/><rect x="310" y="100" width="26" height="90" rx="4" fill="#10B49C"/>
+<rect x="210" y="230" width="60" height="24" fill="#1E5550"/><rect x="170" y="252" width="140" height="12" rx="6" fill="#1E5550"/></svg>
